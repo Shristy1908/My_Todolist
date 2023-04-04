@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- adding google font -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+
+        <!-- Title of the project -->
+
+        <title>To Do List</title>
+
+        <!-- Adding font-awesome -->
+
+        <script
+        src="https://kit.fontawesome.com/416879b001.js"
+        crossorigin="anonymous"
+        ></script>
+
+        <!-- linking css file -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Linking js file -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="container">
+           <div id="main">
+               <!-- header section -->
+               <header>
+                  <h1>My To Do List</h1>
+               </header>
+
+             <form action="">
+              <!-- taking input from the user -->
+              <input
+                  type="text"
+                  placeholder="Enter your Item"
+                  class="todo-input"
+                  required
+              />
+              <!-- add item button -->
+              <button class="todo-button" type="submit">
+                  <i class="fa fa-solid fa-plus"></i>
+              </button>
+
+            </form>
+
+            <span id="span1"><i class="fa fa-solid fa-check-double"></i> Complete all task</span>
+            <span>Clear completed</span>
+
+            <hr style="color: rgb(222, 222, 222);margin: 30px 0px "  />
+
+            <!-- todolist items -->
+            <div class="todo-container">
+            <ul class="todo-list"></ul>
+            </div>
+
+            <hr style="color: rgb(64, 63, 63); margin: 10px 0px" />
+
+            <!-- footer section -->
+            <footer> 
+               <div id="task">
+
+               </div>
+               
+               <button class="button" id="btn1">All</button>
+               <button class="button" id="btn2" onclick="comp()">Complete</button>
+               <button class="button" onclick="Uncomp()">Uncomplete</button>
+             
+
+            </footer>  
+         </div>
+        </div>
+    </body>
+    </html>  

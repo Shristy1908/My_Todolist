@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling body of the page */
+
+body{
+    background-color: rgb(226, 222, 249);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#container{
+    background-color: #d2d0d0;
+    padding: 100px 200px;
+}
+#main{
+    background-color: rgb(35, 29, 70);
+    padding: 50px 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(69, 69, 69);
+}
+
+/* styling header section */
+
+#main header h1{
+    color: #fff;
+    font-family:'poppins',sans-serif;
+    text-align: center;
+    margin: auto;
+}
+#main .todo-input{
+    margin-top: 35px;
+    padding: 10px 10px;
+    font-size: 20px; 
+    width: 89%; 
+    margin-bottom: 30px;
+}
+#main .todo-button{
+    padding: 15px 15px;
+    background-color: gray;
+    color: black;
+    border: none;
+}
+#main .todo-button:hover{
+    background-color: rgb(206, 204, 204);
+}
+#main span{
+    color:gray;
+    font-size: 20px;
+}
+#main #span1{
+    margin-right: 225px;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 100%;
+    list-style: none;
+    background-color: rgb(166, 164, 164);
+ 
+}
+.todo{
+    margin: 0.5rem;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;  
+    transition: all 0.5s ease-in;
+}
+.todo li{
+    flex: 1;
+}
+.complete-btn,.trash-btn{
+    background-color: rgb(166, 164, 164);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+.complete-btn:hover,.trash-btn:hover{
+    background-color: gray;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.check{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* styling footer section */
+
+footer{
+    display: flex;
+   
+    color: gray;
+}
+footer #task{
+    margin-right: 200px;
+    font-size: 20px;
+}
+footer .button{
+    display: flex;
+    list-style: none;
+    font-size: 20px; 
+    cursor: pointer;  
+    padding: 2px;
+}
+footer .button:hover{
+    background-color: rgb(56, 56, 97);
+}
+footer button{
+    color:gray;
+    background-color:rgb(35, 29, 70) ;
+    border: none;
+    margin-left:8px;
+}
+
+@media only screen and (max-width:600px){
+    #container{
+        padding: 700px 100px;
+    }  
+    #main{
+        padding: 50px 50px;     
+        width: 100%;
+        height: 600px;
+    }
+    #main #span1{
+        margin-right: 115px;
+    }
+    hr{
+        margin: 30px 0px;        
+    }
+    footer #task{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .button{
+        font-size: 15px;   
+    }
+}
